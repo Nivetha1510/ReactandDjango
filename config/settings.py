@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     for host in os.environ.get(
         "ALLOWED_HOSTS",
         "localhost,127.0.0.1",
+        "reactanddjango.onrender.com",
     ).split(",")
     if host.strip()
 ]
